@@ -59,6 +59,7 @@
      <Compile Include="Assets\Scripts\Spawning\Creature.cs" />
      <Compile Include="Assets\Scripts\Spawning\Fruit.cs" />
      <Compile Include="Assets\Scripts\Spawning\Grid.cs" />
+     <Compile Include="Assets\Scripts\Spawning\Wall.cs" />
  <Reference Include="Unity.Timeline.Editor">
  <HintPath>F:/SimWorldThing/Simulation/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
  </Reference>
