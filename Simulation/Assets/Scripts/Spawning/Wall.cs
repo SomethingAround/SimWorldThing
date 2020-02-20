@@ -12,33 +12,31 @@ using UnityEngine;
 
 public class Wall : MonoBehaviour
 {
+    float fWallOffset = 0.5f;
 
     public WallPos side;
-
-    Transform transform;
 
     Transform ground;
     // Start is called before the first frame update
     void Start()
     {
         ground = GameObject.FindGameObjectWithTag("Ground").GetComponent<Transform>();
-
+        
         switch (side)
-        transform = gameObject.GetComponent<Transform>();
         {
             case WallPos.Left:
-                print("hello");
+                print("Left");
+                gameObject.transform.position = new Vector3(fWallOffset, fWallOffset, ground.position.z);
                 break;
             case WallPos.Right:
-                print("hello");
+                print("Right");
                 break;
             case WallPos.Front:
-                print("hello");
+                print("Front");
                 break;
             case WallPos.Back:
-                print("hello");
+                print("Back");
                 break;
         }
-        transform.localPosition = ground.localPosition;
     }
 }

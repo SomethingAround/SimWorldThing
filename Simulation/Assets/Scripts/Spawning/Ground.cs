@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 
-public class Grid : MonoBehaviour
+public class Ground : MonoBehaviour
 {
     float fPosOffset;
     float fScaleOffset;
@@ -15,7 +15,7 @@ public class Grid : MonoBehaviour
     Vector3 v3Pos;
     Vector3 v3Size;
 
-    Transform transform;
+    new Transform transform;
 
     void Start()
     {
